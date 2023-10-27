@@ -11,76 +11,75 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/styles/style-index.css">
 
-    <link rel="shortcut icon" href="assets/medias/imagem_2023-10-09_175430554-PhotoRoom.png-PhotoRoom.ico" type="image/x-icon">
-    <script src="assets/script/script.js"></script>
+    <link rel="shortcut icon" href="assets/medias/imagem_2023-10-09_175430554-PhotoRoom.png-PhotoRoom.ico"
+        type="image/x-icon">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-Bt6f4F/xSrdmO3SSxEFOJj6Z6u8E+DGrTEOPnfwzAMwG9EfeF9zn2E+zM6Fz5l5r"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- Outros scripts -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-wg5B09VXHmq0zRr2dAXs5/3tx2Z1TtWoEz5sGsfF6O3w5J6W5+gO6krJc2G5Df5V9"
-        crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha384-KyZXEAg3QhqLMpG8r+1gZm5um/u2Tz5W8JGXHf9ztyE6LXKn5Dgm8F5v5B/kD5E5J"
-            crossorigin="anonymous"></script>
-
-
-
     <title>GALTRA - Desvendando o futuro com IA</title>
-    <style>
-        /* Seus estilos CSS personalizados aqui */
-    </style>
 </head>
 
 <body>
     <!--NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light mt-2">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container col-12">
-            <a class="navbar-brand" href="index.html"><img src="assets/medias/logo_horizontal_layerstyle.svg"
-                    alt="Logo Galtra" class="img-fluid" height="84px" width="250px"></a>
+            <a class="navbar-brand" href="index.html"><img src="assets/medias/logo_galtra.png" alt="Logo Galtra"
+                    class="img-fluid" height="84px" width="200px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
 
-            <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
-                <ul class="navbar-nav fw-bolder fs-5 text-black">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Pagina Inicial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section1">Sobre Nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#section2">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarNav">
+                    <ul class="navbar-nav fw-bolder fs-5 text-black">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Pagina Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section1">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section2">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" target="_blank">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
     </nav>
     <!--FIM NAV -->
     <!--HEADER -->
     <div class="container center-content" id="header">
         <div class="row">
             <div class="column col-12 col-lg-6">
-
-    <h1 class="fw-bolder text-center text-lg-start" id="typing-header">
-        <span class="spanTitle">
-            Desvendando o Futuro com Inteligência Artificial
-        </span>
-    </h1>
-    
+                <h1 class="fw-bolder text-center text-lg-start" id="typing-header">
+                    <span class="spanTitle">
+                        Desvendando o Futuro com Inteligência Artificial
+                    </span>
+                </h1>
                 <p class="fw-bolder fs-1 text-center text-lg-start" id="subtitle">Bem-Vindo a <span>GALTRA</span>, sua
                     parceira em soluções de inteligência artificial. Transformamos dados em insights para
                     impulsionar o seu sucesso. Junte-se a nós na jornada de inovação em IA.</p>
                 <button type="button"
                     class="btn btn-primary btn-lg col-12 col-lg-4 d-flex align-items-center justify-content-center"
-                    id="btn-1">CONTATO</button>
+                    id="btn-1"><a href="contact.html" target="_blank">CONTATO</a></button>
             </div>
             <div class="column col-12 col-lg-6">
-                <img src="assets/medias/imgHome.svg" alt="Cérebro" class="img-fluid header-image" width="100%"
+                <img src="assets/medias/image.svg" alt="Cérebro" class="img-fluid header-image" width="100%"
                     height="auto">
             </div>
         </div>
@@ -106,14 +105,15 @@
                 </div>
                 <div class="col-xl-4 col-md-4 col-sm-12 sr">
                     <div class="circle">
-                        <img src="assets/medias/inovacao.svg" alt="Eficiência" class="img-fluid">
+                        <img src="assets/medias/aumentar.svg" alt="Eficiência" class="img-fluid">
                         <p>Eficiência</p>
                     </div>
                 </div>
             </div>
         </div>
-    
-        <p class="text-center mt-5 sr" id="ia-ex">Na GALTRA, nossa paixão é desvendar o potencial ilimitado da inteligência
+
+        <p class="text-center mt-5 sr" id="ia-ex">Na <span>GALTRA</span>, nossa paixão é desvendar o potencial ilimitado da
+            inteligência
             artificial. Com uma equipe altamente
             qualificada de especialistas, estamos comprometidos em liderar a busca da inovação tecnológica.</p>
     </div>
@@ -171,8 +171,8 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-lg-6 text-center contentFooter">
-                    <img src="assets/medias/logo_horizontal_layerstyle.svg" alt="Logo Galtra" width="593px"
-                        height="200px" class="img-fluid">
+                    <img src="assets/medias/logo_galtra.png" alt="Logo Galtra" width="593px" height="200px"
+                        class="img-fluid">
                 </div>
                 <div class="col-12 col-lg-6 text-center mt-5">
                     <p>Telefone: (00) 0000-0000</p>
@@ -181,8 +181,8 @@
             </div>
             <div class="row">
                 <div class="col-12 text-center copyright">
-                    <p>&copy; 2023 NPD (Núcleo de Práticas em Desenvolvimento de Software) | Designer: Fellipe Tereska |
-                        Desenvolvedor: Luiz Matheus da Silva</p>
+                    <p>&copy; 2023 NPD (Núcleo de Práticas em Desenvolvimento de Software) | Designer: <a href="https://flow.code/fellipetereska" target="_blank">Fellipe Tereska</a> |
+                        Desenvolvedores: <a href="https://linkme.bio/luizmatheusdev" target="_blank">Luiz Matheus da Silva</a>, João Carlos Martins Silva</p>
                 </div>
             </div>
         </div>
@@ -190,52 +190,7 @@
     <!-- END FOOTER -->
 
     <!-- JS -->
-   <script>
-    // Função para simular o efeito de digitação em loop
-    function typeEffect(element, text, speed) {
-        let i = 0;
-        function type() {
-            if (i < text.length) {
-                element.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(type, speed);
-            } else {
-                setTimeout(erase, 1000); // Aguarde 1 segundo após digitar todo o texto
-            }
-        }
-
-        function erase() {
-            if (i >= 0) {
-                let tempText = text.substring(0, i);
-                element.innerHTML = tempText;
-                i--;
-                setTimeout(erase, speed);
-            } else {
-                i = 0;
-                setTimeout(type, 1000); // Aguarde 1 segundo antes de começar a digitar novamente
-            }
-        }
-
-        type();
-    }
-
-    // Chame a função com o elemento desejado, o texto e a velocidade
-    const element = document.getElementById("typing-header");
-    const text = "Desvendando o Futuro com Inteligência Artificial";
-    const speed = 100; // Ajuste a velocidade conforme necessário (valores maiores tornam mais lento)
-
-    typeEffect(element, text, speed);
-</script>
-<script>
-    // Configure o ScrollReveal
-    ScrollReveal().reveal('.sr', {
-        duration: 1000, // Duração da animação em milissegundos
-        origin: 'bottom', // Origem da animação
-        distance: '20px', // Distância de deslocamento
-        delay: 200, // Atraso entre animações
-        reset: true // Para que a animação seja executada novamente ao rolar para cima e para baixo
-    });
-</script>
+    <script src="assets/script/script.js"></script>
 
 
 

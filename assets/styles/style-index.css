@@ -9,8 +9,8 @@
     --mainFont: 'Acumin Variable Concept', sans-serif;
     --secondaryFont: 'Expletus Sans', cursive;
     --bg-color: rgb(242, 242, 242);
-    --primary: rgb(85, 12, 24);
-    --hover: rgb(40, 4, 10);
+    --primary: rgb(40, 54, 24);
+    --hover: rgb(35, 95, 65);
     --third: rgb(94, 94, 94);
     --fourth: rgb(82, 82, 82);
     --dark: #000;
@@ -21,6 +21,7 @@ body {
     font-family: var(--mainFont) !important;
     background-color: #F2F2F2;
 }
+
 
 nav a {
     color: var(--dark) !important;
@@ -45,10 +46,18 @@ nav a:hover {
     line-height: normal;
     box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.45);
     border: none;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+#btn-1 a {
+    text-decoration: none;
+    color: white !important;
 }
 
 #btn-1:hover {
     background-color: var(--hover);
+    transition: 0.6s;
 }
 
 .center-content {
@@ -67,7 +76,7 @@ nav a:hover {
 }
 
 .container h1 {
-    color: var(--third) !important;
+    color: var(--hover) !important;
     font-size: 45px !important;
     font-style: normal !important;
     font-weight: 600 !important;
@@ -94,21 +103,22 @@ span {
     margin-top: 300px;
 }
 
-#section2 {
-    margin-top: 300px;
-    
-}
-
 #section1 h2 {
-    color: var(--fourth);
-    font-size: 60px;
+    text-align: center !important;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    color: var(--fourth);
+    font-size: 60px !important;
+    margin-top: 25px;
+}
+
+#section2 {
+    margin-top: 300px;
 }
 
 #section2 h2 {
-    color: #550C18;
+    color: var(--primary);
     font-size: 45px;
     font-style: normal;
     font-weight: 900;
@@ -125,23 +135,12 @@ span {
 
 #section2 {
     padding-top: 100px;
-    /* Adicione um espaço superior para centralizar a seção verticalmente */
     padding-bottom: 100px;
-    /* Adicione um espaço inferior para centralizar a seção verticalmente */
 }
 
 .ia {
     color: var(--primary);
 }
-
-.circle {
-    width: 326px;
-    height: 326px;
-    border-radius: 326px;
-    background: var(--primary);
-    box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 0.25);
-}
-
 
 .circle-container,
 .circle-white {
@@ -152,8 +151,8 @@ span {
 }
 
 .circle {
-    width: 326px;
-    height: 326px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-color: var(--bg-color);
     display: flex;
@@ -161,12 +160,12 @@ span {
     align-items: center;
     justify-content: center;
     margin: 95px auto;
+    box-shadow: 0px 4px 30px 3px rgba(0, 0, 0, 0.25)
 }
 
 .circle img {
     width: 91px;
     height: 91px;
-    border-radius: 50%;
     margin-bottom: 10px;
 }
 
@@ -216,7 +215,8 @@ span {
     font-weight: 600 !important;
 }
 
-.square1, .square2 {
+.square1,
+.square2 {
     background: var(--bg-color);
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.10);
     border-radius: 10px;
@@ -268,6 +268,15 @@ footer {
     font-size: 22px;
 }
 
+footer a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+footer a:hover {
+    color: var(--primary);
+}
 
 footer .container {
     font-weight: 600;
@@ -327,60 +336,57 @@ footer .container {
     opacity: 1;
 }
 
-   @media (max-width: 1300px) {
+@media (max-width: 1300px) {
+    .container h1,
+    #section2 h2,
+    #section1 h2 {
+        font-size: 2em !important;
+    }
 
-       /* Reduza o tamanho da fonte em alguns elementos */
-       .container h1,
-       #section2 h2,
-        #section1 h2 {
-           font-size: 40px !important;
-       }
+    .container p,
+    #section2 p,
+    #section1 p {
+        font-size: 1.25em;;
+        text-align: center !important;
+    }
 
-       .container p,
-           #section2 p,
-           #section1 p {
-           font-size: 20px;
-           text-align: center !important;
-       }
+    #header {
+        margin-top: 0px;
+    }
 
-       #header {
-           margin-top: 0px;
-       }
+    #ia-ex {
+        font-size: 20px;
+        font-weight: 500 !important;
+    }
 
-       #ia-ex {
-           font-size: 20px;
-           font-weight: 500 !important;
-       }
+    #section1,
+    #section2 {
+        margin-top: 40px;
+    }
 
-       #section1,
-       #section2 {
-           margin-top: 40px;
-       }
+    .circle,
+    .circle-white,
+    .circle-white2 {
+        width: 150px;
+        height: 150px;
+        margin: 20px auto;
+    }
 
-       /* Reduza o tamanho dos círculos e seus conteúdos */
-       .circle,
-       .circle-white,
-       .circle-white2 {
-           width: 150px;
-           height: 150px;
-           margin: 20px auto;
-       }
+    .circle img,
+    .circle-white img,
+    .circle-white2 img {
+        width: 60px;
+        height: 60px;
+    }
 
-       .circle img,
-       .circle-white img,
-       .circle-white2 img {
-           width: 60px;
-           height: 60px;
-       }
+    .circle p,
+    .circle-white p,
+    .circle-white2 p {
+        font-size: 18px !important;
+    }
 
-       .circle p,
-       .circle-white p,
-       .circle-white2 p {
-           font-size: 18px !important;
-       }
-       
     .square1,
     .square2 {
         margin-left: 0px;
     }
-   }
+}
